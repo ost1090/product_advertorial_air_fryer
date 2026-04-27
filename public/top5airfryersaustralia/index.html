@@ -6,370 +6,354 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Air Fryers in Australia 2026: Real Data &amp; Real Reviews - Verified Reviews</title>
     
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDKKVC07FZ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-NDKKVC07FZ');
-    </script>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
-    
     <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
     
     <style>
         body { 
-            font-family: 'Inter', sans-serif;
+            font-family: 'Inter', sans-serif; 
+            background-color: #020617; /* Deepest Slate */
+            color: #cbd5e1; /* Light Slate for readability */
         }
         
-        /* Mobile Spacing Normalization */
+        /* Ambient Background Glows */
+        .glow-orb-1 { position: fixed; top: -10%; left: -10%; width: 50vw; height: 50vh; background: rgba(79, 70, 229, 0.15); border-radius: 50%; filter: blur(120px); pointer-events: none; z-index: 0; }
+        .glow-orb-2 { position: fixed; bottom: -10%; right: -10%; width: 50vw; height: 50vh; background: rgba(147, 51, 234, 0.12); border-radius: 50%; filter: blur(120px); pointer-events: none; z-index: 0; }
+
+        /* Mobile Normalization */
         @media (max-width: 600px) {
             .prose p { margin-bottom: 1em !important; line-height: 1.6 !important; }
-            .prose h2 { margin-top: 1.5em !important; font-size: 1.5rem !important; }
+            .prose h2 { margin-top: 1.5em !important; font-size: 1.4rem !important; }
+            .product-review-card { padding: 1.5rem 1rem !important; margin-bottom: 2rem !important; }
         }
 
-        /* =============================================
-           GLASSMORPHISM PRODUCT CARDS — DARK MODE
-        ============================================= */
+        /* Glassmorphism Product Cards (Fixed Padding and Space) */
         .product-review-card { 
-            background: rgba(15, 23, 42, 0.65);
+            background-color: rgba(15, 23, 42, 0.6); /* Slate 900 transparent */
             backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            padding: 32px 40px; 
-            margin-bottom: 40px; 
-            margin-top: 20px;
-            border-radius: 16px; 
-            box-shadow: 0 8px 32px rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.04) inset;
-            border: 1px solid rgba(99, 102, 241, 0.18);
-            border-left: 3px solid #818cf8;
-            transition: transform 0.25s cubic-bezier(0.4,0,0.2,1), box-shadow 0.25s cubic-bezier(0.4,0,0.2,1); 
+            padding: 2.5rem 3rem; 
+            margin-bottom: 3.5rem; 
+            margin-top: 2rem;
+            border-radius: 1rem; 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4); 
+            border: 1px solid rgba(51, 65, 85, 0.5); /* Subtle dark border */
             width: 100%; 
+            position: relative;
+            z-index: 10;
         }
-        .product-review-card:hover { 
-            transform: translateY(-5px); 
-            box-shadow: 0 24px 56px rgba(0,0,0,0.6), 0 0 40px rgba(99,102,241,0.12);
-            border-left-color: #a5b4fc;
-        }
-        .product-review-card h2:first-child {
-            margin-top: 0 !important;
-        }
+        
+        .product-review-card h2:first-child { margin-top: 0 !important; color: #f8fafc !important; }
 
-        /* =============================================
-           VISUAL STAR RATINGS — DARK MODE
-        ============================================= */
+        /* Visual Stars Dark Mode */
         .stars-wrapper { margin-bottom: 20px; margin-top: -5px; display: flex; align-items: center; }
         .stars-outer { position: relative; display: inline-block; font-size: 24px; font-family: Times, serif; color: #334155; letter-spacing: 2px; }
         .stars-outer::before { content: "★★★★★"; }
-        .stars-inner { position: absolute; top: 0; left: 0; white-space: nowrap; overflow: hidden; color: #fbbf24; }
+        .stars-inner { position: absolute; top: 0; left: 0; white-space: nowrap; overflow: hidden; color: #eab308; }
         .stars-inner::before { content: "★★★★★"; }
         .stars-text { margin-left: 12px; color: #94a3b8; font-size: 0.95rem; font-weight: 700; }
         
-        /* =============================================
-           PRODUCT IMAGES — DARK MODE
-        ============================================= */
+        /* Enlarged, 100% Width Images */
         .prose img { 
+            width: 100% !important; /* Forces double size */
+            height: auto;
             border-radius: 12px; 
-            box-shadow: 0 8px 32px rgba(0,0,0,0.4);
-            mix-blend-mode: normal;
-            margin: 2.5rem auto !important;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            margin: 2.5rem 0 !important;
             display: block !important;
-            max-width: 100%;
         }
 
-        /* =============================================
-           NON-AMAZON PROSE LINKS — CYAN NEON
-        ============================================= */
-        .prose a:not([href*="amazon.com.au"]) {
-            color: #22d3ee !important;
-            text-decoration-color: rgba(34,211,238,0.3) !important;
-            transition: color 0.2s ease, text-decoration-color 0.2s ease;
-        }
-        .prose a:not([href*="amazon.com.au"]):hover {
-            color: #67e8f9 !important;
-            text-decoration-color: rgba(103,232,249,0.6) !important;
-        }
-
-        /* =============================================
-           AMAZON CTA BUTTONS — PREMIUM AMBER GLOW
-        ============================================= */
+        /* Fixed Rectangular Amazon Buttons */
         .prose a[href*="amazon.com.au"] { 
             display: flex; 
             justify-content: center;
             align-items: center;
             width: 100%; 
-            background: linear-gradient(135deg, #d97706 0%, #f59e0b 45%, #fbbf24 100%);
-            color: #0f172a !important; 
-            padding: 1.1rem 2rem; 
+            max-width: 400px; /* Prevents it from becoming a massive square */
+            background: linear-gradient(135deg, #f97316, #ef4444);
+            color: #ffffff !important; 
+            padding: 1rem 1.5rem; /* Tighter padding for rectangle shape */
             font-size: 1.15rem;
-            font-weight: 800;
-            letter-spacing: 0.03em;
+            font-weight: 800; 
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
             text-decoration: none !important; 
-            border-radius: 0.875rem; 
-            margin: 2rem 0;
-            box-shadow: 0 8px 28px rgba(245, 158, 11, 0.4), 0 0 0 1px rgba(251,191,36,0.2);
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            position: relative;
-            overflow: hidden;
+            border-radius: 0.75rem; 
+            margin: 2.5rem auto 1rem auto; /* Centered */
+            box-shadow: 0 10px 25px rgba(249, 115, 22, 0.25);
+            transition: all 0.3s ease;
         }
         
         .prose a[href*="amazon.com.au"]:hover {
-            transform: translateY(-3px) scale(1.01);
-            box-shadow: 0 16px 48px rgba(245, 158, 11, 0.55), 0 0 60px rgba(251,191,36,0.25), 0 0 0 1px rgba(251,191,36,0.4);
-            color: #0f172a !important;
-        }
-        
-        .prose a[href*="amazon.com.au"]:active {
-            transform: translateY(0px) scale(0.99);
-            box-shadow: 0 4px 16px rgba(245, 158, 11, 0.35);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(249, 115, 22, 0.4);
         }
     </style>
 </head>
-<body class="bg-slate-950 min-h-screen text-slate-300 antialiased p-2 sm:p-4 lg:p-8 flex flex-col items-center relative">
-    <!-- Ambient Glow Orbs -->
-    <div aria-hidden="true" class="pointer-events-none fixed inset-0 overflow-hidden z-0">
-        <div class="absolute -top-48 -left-48 w-[600px] h-[600px] bg-indigo-950 rounded-full opacity-60 blur-3xl"></div>
-        <div class="absolute top-1/2 -right-48 w-[500px] h-[500px] bg-violet-950 rounded-full opacity-40 blur-3xl"></div>
-        <div class="absolute -bottom-32 left-1/3 w-[400px] h-[400px] bg-indigo-900 rounded-full opacity-30 blur-3xl"></div>
-    </div>
+<body class="min-h-screen antialiased p-0 sm:p-4 md:p-8 flex flex-col items-center relative overflow-x-hidden">
     
-    <div class="relative z-10 max-w-5xl w-full bg-slate-900/80 backdrop-blur-sm rounded-2xl shadow-[0_16px_64px_rgba(0,_0,_0,_0.6)] border border-slate-700/60 overflow-hidden flex flex-col mt-4 mb-12">
+    <div class="glow-orb-1"></div>
+    <div class="glow-orb-2"></div>
+
+    <div class="max-w-4xl w-full flex flex-col mt-4 mb-10 z-10">
         
-        <header class="bg-gradient-to-b from-slate-950 to-slate-900 px-6 sm:px-14 py-10 sm:py-14 text-center border-b border-indigo-900/60">
-            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">Best Air Fryers in Australia 2026: Real Data &amp; Real Reviews</h1>
+        <header class="px-4 sm:px-8 py-10 text-left border-b border-slate-800 mb-8">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight mb-8">Best Air Fryers in Australia 2026: Real Data &amp; Real Reviews</h1>
+            
+            <div class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-300 font-bold text-sm">CN</div>
+                <div class="text-slate-400 italic text-sm">
+                    Edited by Frank & The Team at ClipNation Studio<br>
+                    <span class="text-xs text-slate-500 not-italic uppercase tracking-wider font-semibold">Updated 2026</span>
+                </div>
+            </div>
         </header>
 
-        <main class="prose prose-lg prose-invert prose-headings:font-extrabold prose-headings:tracking-tight prose-headings:text-white prose-h2:text-indigo-300 prose-strong:text-white prose-p:text-slate-300 max-w-none px-6 sm:px-14 py-10 sm:py-12">
+        <main class="prose prose-invert prose-slate max-w-none px-4 sm:px-8 py-4">
             
-<p>Unlock a healthier lifestyle by upgrading your kitchen with the latest air fryers. Discover the best models available on the Australian market, based on real sales data and authentic reviews.</p>
+<p>In the fast-paced world of kitchen gadgets, the air fryer has emerged as a must-have for health-conscious Australians. Discover the top air fryers backed by actual sales data and verified buyer ratings, helping you make an informed choice for your home.</p>
 <h2 id="whytrustthisdata">Why Trust This Data</h2>
-<p>We delve beyond marketing fluff to bring you insights from real sales statistics and genuine buyer feedback. This ensures we're showcasing the products Australians are truly loving right now.</p>
-<h2 id="glassairfryer">Glass Air Fryer</h2>
+<p>By analyzing recent sales trends and authentic user reviews, we've identified the most popular air fryers Australians are buying right now. Say goodbye to marketing hype and trust real data for your next kitchen upgrade.</p>
+<h2 id="glassairfryerbonusreview">Glass Air Fryer: Bonus Review</h2>
 <p>
     <div class="stars-wrapper not-prose">
         <div class="stars-outer">
             <div class="stars-inner" style="width: 92%"></div>
         </div>
-        <span class="stars-text">4.6/5 Stars on Amazon</span>
+        <span class="stars-text">4.6/5 Stars</span>
     </div>
-    </p>
-<p><img src="https://m.media-amazon.com/images/I/61NTvcI4UvL._AC_UL600_SR600,400_.jpg" alt="Product Image" /></p>
-<h3 id="prosandcons">Pros and Cons</h3>
+    <br />
+<img src="https://images-fe.ssl-images-amazon.com/images/I/61NTvcI4UvL._AC_UL600_SR600,400_.jpg" alt="Glass Air Fryer" /></p>
+<h3 id="quickfacts">Quick Facts</h3>
+<ul>
+<li><strong>Type</strong>: Glass Digital Air Fryer</li>
+<li><strong>Capacity</strong>: 6.5L</li>
+<li><strong>Feature</strong>: Detachable Glass Pot</li>
+<li><strong>Control</strong>: Easy-to-Use Timer &amp; Temp Controls</li>
+</ul>
+<h3 id="proscons">Pros &amp; Cons</h3>
 <p><strong>Pros:</strong></p>
 <ul>
-<li><strong>Healthier Cooking:</strong> Free from harmful chemicals.</li>
-<li><strong>Easy Cleanup:</strong> Dishwasher-safe glass pot.</li>
-<li><strong>Visual Cooking:</strong> Transparent glass for perfect results.</li>
+<li><strong>Healthy Cooking</strong>: Free from harmful chemicals.</li>
+<li><strong>Easy Cleanup</strong>: Dishwasher-safe glass pot.</li>
+<li><strong>Monitor Cooking</strong>: See through the glass for perfect results.</li>
 </ul>
 <p><strong>Cons:</strong></p>
 <ul>
-<li><strong>Limited Capacity:</strong> May not suit larger families.</li>
+<li><strong>Size</strong>: Bulky for smaller kitchens.</li>
 </ul>
-<h3 id="review">Review</h3>
-<p>For those wary of toxins leaching into their food, this Glass Air Fryer offers a revolutionary cooking experience. With a health-conscious design, it’s perfect for Australians seeking cleaner meal prep without compromising on taste.</p>
-<p>Users love the effortless cleanup, thanks to the dishwasher-safe glass pot. Goodbye to tedious scrubbing! The transparent cooking pot allows for easy monitoring to achieve crispy perfection.</p>
-<p>The unique non-toxic coating sets this fryer apart, ensuring peace of mind for health-aware consumers. Ideal for eco-conscious families and individuals focusing on healthier lifestyles.</p>
-<p>Perfect for urban Australian professionals needing a quick, clean, and healthy meal solution. It's a top pick for those in apartments where cooking smells might linger.</p>
-<p><a href="#">Check Latest Price on Amazon</a></p>
+<p>The Glass Air Fryer stands out with its <strong>toxin-free cooking</strong> experience, an ideal choice for families wanting safer meal options. Customers rave about the <strong>effortless cleanup</strong> and the ability to watch food while cooking, ensuring perfectly crispy results every time. Unlike traditional fryers, its glass design not only offers a sleek look but also ensures food safety. This fryer is perfect for <strong>families</strong> and <strong>health enthusiasts</strong> looking for a reliable and safe cooking option. </p>
+<p><a href="https://www.amazon.com.au/Glass-Digital-Fryer-1200W-Cleaning/dp/B0C2NSCLGY" rel="noopener noreferrer" target="_blank">Check Latest Price on Amazon</a></p>
 <h2 id="philips2000seriesairfryer">Philips 2000 Series Airfryer</h2>
 <p>
     <div class="stars-wrapper not-prose">
         <div class="stars-outer">
             <div class="stars-inner" style="width: 94%"></div>
         </div>
-        <span class="stars-text">4.7/5 Stars on Amazon</span>
+        <span class="stars-text">4.7/5 Stars</span>
     </div>
-    </p>
-<p><img src="https://images-fe.ssl-images-amazon.com/images/I/514XT0hJfSL._AC_UL600_SR600,400_.jpg" alt="Product Image" /></p>
-<h3 id="prosandcons-1">Pros and Cons</h3>
+    <br />
+<img src="https://images-fe.ssl-images-amazon.com/images/I/514XT0hJfSL._AC_UL600_SR600,400_.jpg" alt="Philips 2000 Series Airfryer" /></p>
+<h3 id="quickfacts-1">Quick Facts</h3>
+<ul>
+<li><strong>Capacity</strong>: 4.2L</li>
+<li><strong>Feature</strong>: RapidAir Technology</li>
+<li><strong>Cooking Options</strong>: 13-in-1</li>
+<li><strong>Clean</strong>: Dishwasher Safe</li>
+</ul>
+<h3 id="proscons-1">Pros &amp; Cons</h3>
 <p><strong>Pros:</strong></p>
 <ul>
-<li><strong>Large Capacity:</strong> 4.2L for family meals.</li>
-<li><strong>Versatile Cooking:</strong> 13-in-1 functionality.</li>
-<li><strong>Health Focused:</strong> Uses up to 90% less fat.</li>
+<li><strong>Versatile Cooking</strong>: 13 cooking modes.</li>
+<li><strong>Healthier Meals</strong>: Up to 90% less fat.</li>
+<li><strong>User-Friendly</strong>: Easy touchscreen controls.</li>
 </ul>
 <p><strong>Cons:</strong></p>
 <ul>
-<li><strong>Bulky Size:</strong> Requires more countertop space.</li>
+<li><strong>Price</strong>: Higher cost.</li>
 </ul>
-<h3 id="review-1">Review</h3>
-<p>The Philips 2000 Series Airfryer is a powerhouse with RapidAir Technology, enabling versatile cooking for healthier meals. With a 4.2-litre capacity, it's perfect for households feeding multiple mouths.</p>
-<p>Customers praise its ease of use and thorough cooking. However, some cite its size as cumbersome for smaller kitchens.</p>
-<p>Its 13-in-1 cooking modes allow for diverse meal preparation, setting it apart from others. Ideal for families or entertainers looking to reduce fat intake without sacrificing flavour.</p>
-<p>Designed for families in the suburbs, providing an efficient and health-conscious cooking solution without extra oil.</p>
-<p><a href="https://www.amazon.com.au/Philips-Technology-Dishwasher-Touchscreen-NA220/dp/B0D9JTSCSB/" rel="noopener noreferrer" target="_blank">Check Latest Price on Amazon</a></p>
+<p>The Philips 2000 Series excels in <strong>small-capacity cooking</strong>, making it ideal for couples or singles. Customers appreciate its <strong>efficiency</strong> and versatility, from frying to grilling. Its standout feature is the RapidAir technology, ensuring evenly cooked, healthier meals. Perfect for <strong>individuals</strong> or <strong>small families</strong> living in urban settings.</p>
+<p><a href="https://www.amazon.com.au/Philips-Technology-Dishwasher-Touchscreen-NA220/dp/B0D9JTSCSB" rel="noopener noreferrer" target="_blank">Check Latest Price on Amazon</a></p>
 <h2 id="ninjaairfryer47lpro">Ninja Air Fryer 4.7L Pro</h2>
 <p>
     <div class="stars-wrapper not-prose">
         <div class="stars-outer">
             <div class="stars-inner" style="width: 96%"></div>
         </div>
-        <span class="stars-text">4.8/5 Stars on Amazon</span>
+        <span class="stars-text">4.8/5 Stars</span>
     </div>
-    </p>
-<p><img src="https://images-fe.ssl-images-amazon.com/images/I/61uPXwB1zXL._AC_UL600_SR600,400_.jpg" alt="Product Image" /></p>
-<h3 id="prosandcons-2">Pros and Cons</h3>
+    <br />
+<img src="https://images-fe.ssl-images-amazon.com/images/I/61uPXwB1zXL._AC_UL600_SR600,400_.jpg" alt="Ninja Air Fryer 4.7L Pro" /></p>
+<h3 id="quickfacts-2">Quick Facts</h3>
+<ul>
+<li><strong>Capacity</strong>: 4.7L</li>
+<li><strong>Cook Functions</strong>: 4</li>
+<li><strong>Design</strong>: Space Saving</li>
+<li><strong>Technology</strong>: Air Crisp</li>
+</ul>
+<h3 id="proscons-2">Pros &amp; Cons</h3>
 <p><strong>Pros:</strong></p>
 <ul>
-<li><strong>Compact Design:</strong> Space-saving for smaller kitchens.</li>
-<li><strong>Multiple Functions:</strong> 4 cooking functions.</li>
-<li><strong>Air Crisp Technology:</strong> For crispy results without excess oil.</li>
+<li><strong>Compact Design</strong>: Saves space in kitchens.</li>
+<li><strong>Rapid Cooking</strong>: Air Crisp technology.</li>
+<li><strong>Multiple Functions</strong>: Suitable for various dishes.</li>
 </ul>
 <p><strong>Cons:</strong></p>
 <ul>
-<li><strong>Limited Colour Options:</strong> Only available in black.</li>
+<li><strong>Limited Capacity</strong>: Not ideal for larger families.</li>
 </ul>
-<h3 id="review-2">Review</h3>
-<p>The Ninja Air Fryer 4.7L Pro is ideal for those with limited space, offering a compact yet highly functional kitchen appliance. Its space-saving design doesn't compromise on capability, thanks to its 4.7-litre capacity.</p>
-<p>Users frequently highlight its efficiency and contemporary look, though wish for more colour variety.</p>
-<p>Its unique Air Crisp Technology ensures crispy perfection, distinguishing it from competitors. Ideal for singles or couples in cosy city apartments who appreciate style and functionality.</p>
-<p>Perfect for busy professionals in metropolitan areas seeking quick, healthy meals without taking up much space.</p>
-<p><a href="https://www.amazon.com.au/Ninja-Functions-Technology-Apartment-AF141ANZ/dp/B0DM5K93FW/" rel="noopener noreferrer" target="_blank">Check Latest Price on Amazon</a></p>
+<p>Ideal for apartment living, the Ninja Air Fryer is highly regarded for its <strong>space-saving design</strong> and rapid cooking technology. Users love its ability to deliver <strong>crispy, evenly cooked meals</strong> without the bulk. This fryer is best for <strong>apartment dwellers</strong> or <strong>smaller households</strong> looking for efficiency without compromising cooking quality.</p>
+<p><a href="https://www.amazon.com.au/Ninja-Functions-Technology-Apartment-AF141ANZ/dp/B0DM5K93FW" rel="noopener noreferrer" target="_blank">Check Latest Price on Amazon</a></p>
 <h2 id="ninjafoodidualzoneairfryer">Ninja Foodi Dual Zone Air Fryer</h2>
 <p>
     <div class="stars-wrapper not-prose">
         <div class="stars-outer">
             <div class="stars-inner" style="width: 94%"></div>
         </div>
-        <span class="stars-text">4.7/5 Stars on Amazon</span>
+        <span class="stars-text">4.7/5 Stars</span>
     </div>
-    </p>
-<p><img src="https://images-fe.ssl-images-amazon.com/images/I/61gxEBeACXL._AC_UL600_SR600,400_.jpg" alt="Product Image" /></p>
-<h3 id="prosandcons-3">Pros and Cons</h3>
+    <br />
+<img src="https://images-fe.ssl-images-amazon.com/images/I/61gxEBeACXL._AC_UL600_SR600,400_.jpg" alt="Ninja Foodi Dual Zone Air Fryer" /></p>
+<h3 id="quickfacts-3">Quick Facts</h3>
+<ul>
+<li><strong>Capacity</strong>: 7.6L</li>
+<li><strong>Baskets</strong>: 2</li>
+<li><strong>Functions</strong>: 6</li>
+<li><strong>Coating</strong>: Non-Stick Ceramic</li>
+</ul>
+<h3 id="proscons-3">Pros &amp; Cons</h3>
 <p><strong>Pros:</strong></p>
 <ul>
-<li><strong>Dual Basket:</strong> Cook two dishes at once.</li>
-<li><strong>XL Capacity:</strong> 7.6L for larger meals.</li>
-<li><strong>Non-Stick Ceramic:</strong> Easy maintenance.</li>
+<li><strong>Dual Cooking</strong>: Two baskets for simultaneous cooking.</li>
+<li><strong>Non-Stick</strong>: Easy to clean.</li>
+<li><strong>Capacity</strong>: Large for family meals.</li>
 </ul>
 <p><strong>Cons:</strong></p>
 <ul>
-<li><strong>Pricey:</strong> Higher initial investment.</li>
+<li><strong>Heavy</strong>: Could be cumbersome to move.</li>
 </ul>
-<h3 id="review-3">Review</h3>
-<p>The Ninja Foodi Dual Zone Air Fryer is excellent for larger families or meal prep enthusiasts. Its dual basket system allows cooking flexibility, reducing dinner prep time.</p>
-<p>Families love the large capacity and dual-zone feature, though the cost is a noted con.</p>
-<p>Its significant capacity and unique cooking zones make it stand out. Ideal for large households or dedicated home cooks who want the flexibility of cooking multiple dishes simultaneously.</p>
-<p>Suited to suburban families or frequent party hosts needing efficient, bulk meal solutions.</p>
-<p><a href="https://www.amazon.com.au/Ninja-Dual-Fryer-AF300-Granite/dp/B08X8LC2PZ/" rel="noopener noreferrer" target="_blank">Check Latest Price on Amazon</a></p>
+<p>The Ninja Foodi Dual Zone is a <strong>powerhouse</strong> for larger families, allowing simultaneous cooking in its two baskets. Real users highlight its <strong>ease of use</strong> and the ability to cook diverse meals. Its large capacity and dual cooking zones make it a standout for <strong>families</strong> and <strong>entertainers</strong>.</p>
+<p><a href="https://www.amazon.com.au/Ninja-Dual-Fryer-AF300-Granite/dp/B08X8LC2PZ" rel="noopener noreferrer" target="_blank">Check Latest Price on Amazon</a></p>
 <h2 id="cuisinartxl76lsingleairfryer">Cuisinart XL 7.6L Single Air Fryer</h2>
 <p>
     <div class="stars-wrapper not-prose">
         <div class="stars-outer">
             <div class="stars-inner" style="width: 94%"></div>
         </div>
-        <span class="stars-text">4.7/5 Stars on Amazon</span>
+        <span class="stars-text">4.7/5 Stars</span>
     </div>
-    </p>
-<p><img src="https://images-fe.ssl-images-amazon.com/images/I/617zPV8bhXL._AC_UL600_SR600,400_.jpg" alt="Product Image" /></p>
-<h3 id="prosandcons-4">Pros and Cons</h3>
+    <br />
+<img src="https://images-fe.ssl-images-amazon.com/images/I/617zPV8bhXL._AC_UL600_SR600,400_.jpg" alt="Cuisinart XL 7.6L Single Air Fryer" /></p>
+<h3 id="quickfacts-4">Quick Facts</h3>
+<ul>
+<li><strong>Capacity</strong>: 7.6L</li>
+<li><strong>Options</strong>: 7-in-1</li>
+<li><strong>Feature</strong>: PFAS Free</li>
+<li><strong>Design</strong>: Slim Footprint</li>
+</ul>
+<h3 id="proscons-4">Pros &amp; Cons</h3>
 <p><strong>Pros:</strong></p>
 <ul>
-<li><strong>Multi-functionality:</strong> 7-in-1 features.</li>
-<li><strong>Slim Footprint:</strong> 36% slimmer design.</li>
-<li><strong>Dishwasher Safe:</strong> Convenient cleaning.</li>
+<li><strong>Large Capacity</strong>: Great for batch cooking.</li>
+<li><strong>Slim Design</strong>: Fits most countertops.</li>
+<li><strong>Versatile</strong>: 7 cooking functions.</li>
 </ul>
 <p><strong>Cons:</strong></p>
 <ul>
-<li><strong>Large Capacity:</strong> Not necessary for smaller households.</li>
+<li><strong>Complex Controls</strong>: Learning curve for new users.</li>
 </ul>
-<h3 id="review-4">Review</h3>
-<p>Cuisinart's XL Air Fryer combines function and form, featuring a slim design and substantial capacity. It efficiently handles large portions without taking over your kitchen counter.</p>
-<p>Reviewers appreciate its performance and aesthetic, finding it an excellent all-rounder.</p>
-<p>The 7-in-1 capability is a notable differentiator, making it particularly versatile. Best for those who need a compact yet high-capacity appliance for their culinary adventures.</p>
-<p>Ideal for large Australian families or chefs looking to maximize kitchen efficiency without the bulk.</p>
-<p><a href="https://www.amazon.com.au/Cuisinart-7-6L-Single-Fryer-Compact/dp/B0FTF1FYLK/" rel="noopener noreferrer" target="_blank">Check Latest Price on Amazon</a></p>
+<p>With its substantial 7.6L capacity, the Cuisinart XL provides ample space for household cooking. Its <strong>versatile functions</strong> and slim footprint make it a customer favourite. Ideal for <strong>big families</strong> or meal preppers, this model shines in delivering fast, health-conscious meals.</p>
+<p><a href="https://www.amazon.com.au/Cuisinart-7-6L-Single-Fryer-Compact/dp/B0FTF1FYLK" rel="noopener noreferrer" target="_blank">Check Latest Price on Amazon</a></p>
 <h2 id="ninjaxxxlflexdrawerairfryer">Ninja XXXL FlexDrawer Air Fryer</h2>
 <p>
     <div class="stars-wrapper not-prose">
         <div class="stars-outer">
             <div class="stars-inner" style="width: 96%"></div>
         </div>
-        <span class="stars-text">4.8/5 Stars on Amazon</span>
+        <span class="stars-text">4.8/5 Stars</span>
     </div>
-    </p>
-<p><img src="https://images-fe.ssl-images-amazon.com/images/I/61VUUnKOaKL._AC_UL600_SR600,400_.jpg" alt="Product Image" /></p>
-<h3 id="prosandcons-5">Pros and Cons</h3>
+    <br />
+<img src="https://images-fe.ssl-images-amazon.com/images/I/61VUUnKOaKL._AC_UL600_SR600,400_.jpg" alt="Ninja XXXL FlexDrawer Air Fryer" /></p>
+<h3 id="quickfacts-5">Quick Facts</h3>
+<ul>
+<li><strong>Capacity</strong>: 10.4L</li>
+<li><strong>Feature</strong>: Removable Divider</li>
+<li><strong>Functions</strong>: 7</li>
+<li><strong>Colour</strong>: Black</li>
+</ul>
+<h3 id="proscons-5">Pros &amp; Cons</h3>
 <p><strong>Pros:</strong></p>
 <ul>
-<li><strong>Large Capacity:</strong> 10.4L for big families.</li>
-<li><strong>Removable Divider:</strong> Flexible cooking area.</li>
-<li><strong>7 Functions:</strong> Extensive versatility.</li>
+<li><strong>Huge Capacity</strong>: Ideal for large meals.</li>
+<li><strong>Flexible Use</strong>: Removable divider for varied cooking.</li>
+<li><strong>Non-Stick</strong>: Easy maintenance.</li>
 </ul>
 <p><strong>Cons:</strong></p>
 <ul>
-<li><strong>Bulky Design:</strong> Requires ample space.</li>
+<li><strong>Size</strong>: Requires more counter space.</li>
 </ul>
-<h3 id="review-5">Review</h3>
-<p>The Ninja XXXL FlexDrawer Air Fryer is perfect for big family gatherings or meal prep. With a 10.4-litre capacity, it caters to large portions, and the removable divider maximizes versatility.</p>
-<p>Customers are thrilled with its size and customizable cooking space, while some find it bulky.</p>
-<p>This air fryer's vast capacity and removable divider uniquely cater to varied cooking needs. Ideal for those in expansive family homes needing robust, versatile kitchen solutions.</p>
-<p>Best suited for expansive homes with plenty of kitchen space and active culinary households.</p>
-<p><a href="https://www.amazon.com.au/Ninja-FlexDrawer-Removable-Dishwasher-AF500/dp/B0CGH4Y9L2/" rel="noopener noreferrer" target="_blank">Check Latest Price on Amazon</a></p>
-<h2 id="theultimateaustralianbuyersguide">The Ultimate Australian Buyer’s Guide</h2>
-<p>Choosing the right air fryer involves considering several factors like capacity, functions, and ease of use. For small households or apartment living, compact models with space-saving designs are ideal. If you entertain often, larger capacity fryers with multiple functions are better suited to your needs.</p>
-<p><strong>Key Features to Look For:</strong></p>
+<p>The Ninja XXXL FlexDrawer takes the lead in capacity, perfect for those needing to cook for big gatherings. Customers highlight its <strong>flexibility</strong> due to the removable divider. This air fryer is perfect for <strong>large households</strong> or those who host frequently, offering unparalleled cooking flexibility.</p>
+<p><a href="https://www.amazon.com.au/Ninja-FlexDrawer-Removable-Dishwasher-AF500/dp/B0CGH4Y9L2" rel="noopener noreferrer" target="_blank">Check Latest Price on Amazon</a></p>
+<h2 id="theultimateaustralianbuyersguide">The Ultimate Australian Buyer's Guide</h2>
+<p>Choosing the right air fryer depends on your household's needs, kitchen space, and cooking preferences. Here are key features to consider:</p>
 <ul>
-<li><strong>Capacity:</strong> Ranges from 2 litres to over 10 litres depending on the house size.</li>
-<li><strong>Cooking Functions:</strong> More functions offer versatile meal preparation.</li>
-<li><strong>Ease of Cleaning:</strong> Dishwasher-safe parts save time and hassle.</li>
-<li><strong>Health Features:</strong> Non-toxic coatings for worry-free cooking.</li>
+<li><strong>Capacity:</strong> <strong>Smaller fryers</strong> (3-4 litres) suit singles or couples, while <strong>larger models</strong> (over 7 litres) are better for families.</li>
+<li><strong>Functions:</strong> Look for models with multiple functions if versatility is crucial.</li>
+<li><strong>Material:</strong> Prefer models with BPA-free or glass pots for safe, chemical-free cooking.</li>
+<li><strong>Ease of Cleaning:</strong> Dishwasher-safe parts save time and effort.</li>
+<li><strong>Space:</strong> Ensure the fryer fits your kitchen workspace.</li>
 </ul>
-<p>For Australians focused on healthy eating, units with less oil usage and non-stick coatings are essential. Look for models that provide even crisp and flavourful results, freeing you from the guilt of deep frying.</p>
+<p>For couples and singles living in apartments, a compact model like the <strong>Ninja Air Fryer 4.7L Pro</strong> might be ideal. Large families or hosts should consider the <strong>Ninja XXXL FlexDrawer</strong> for its substantial capacity and flexible cooking.</p>
 <h2 id="frequentlyaskedquestions">Frequently Asked Questions</h2>
-<h3 id="whatsizeairfryershouldibuyforafamilyoffour">What size air fryer should I buy for a family of four?</h3>
-<p>A 4-6 litre capacity should suffice for most meal needs.</p>
-<h3 id="areglassairfryersbetterthantraditionalmodels">Are glass air fryers better than traditional models?</h3>
-<p>Glass air fryers offer non-toxic cooking and easy cleanup, ideal for health-conscious users.</p>
-<h3 id="howdoesairfryingcomparetotraditionalfrying">How does air frying compare to traditional frying?</h3>
-<p>Air fryers use significantly less oil while achieving similar crispness, promoting healthier eating.</p>
-<h3 id="isadualzoneairfryerworthit">Is a dual-zone air fryer worth it?</h3>
-<p>For those cooking multiple dishes simultaneously, dual zones offer unmatched convenience.</p>
-<h3 id="aretheairfryerpartsdishwashersafe">Are the air fryer parts dishwasher safe?</h3>
-<p>Most modern air fryers have dishwasher-safe components for easy cleaning.</p>
-<h3 id="canibakeinanairfryer">Can I bake in an air fryer?</h3>
-<p>Yes, many models offer baking functions alongside frying, roasting, and grilling.</p>
-<h3 id="isiteasytofindairfryeraccessoriesinaustralia">Is it easy to find air fryer accessories in Australia?</h3>
-<p>Yes, most major brands provide a range of accessories for purchase online.</p>
-<h3 id="doairfryersusealotofelectricity">Do air fryers use a lot of electricity?</h3>
-<p>They are generally energy-efficient, with quick cooking times reducing power use.</p>
-<h3 id="areairfryerssuitableforbakingdesserts">Are air fryers suitable for baking desserts?</h3>
-<p>Yes, many models can bake desserts like cakes and pastries.</p>
-<h3 id="howdoiavoidsmokefrommyairfryer">How do I avoid smoke from my air fryer?</h3>
-<p>Ensure the appliance is clean and not overloaded, and avoid cooking greasy foods at very high temperatures.</p>
+<h3 id="whatisthebestairfryersizeforafamily">What is the best air fryer size for a family?</h3>
+<p>For families, aim for at least a 5-6 litre capacity to cook enough food for everyone.</p>
+<h3 id="canicookmultipledishesatonce">Can I cook multiple dishes at once?</h3>
+<p>Yes, models like the <strong>Ninja Foodi Dual Zone</strong> offer dual baskets for simultaneous dish preparation.</p>
+<h3 id="howdoicleanmyairfryer">How do I clean my air fryer?</h3>
+<p>Choose a model with dishwasher-safe components for <strong>hassle-free cleaning</strong>.</p>
+<h3 id="isairfryinghealthierthantraditionalfrying">Is air frying healthier than traditional frying?</h3>
+<p>Air frying uses significantly <strong>less oil</strong>, making it a healthier cooking method.</p>
+<h3 id="doesaglassairfryerworkbetterthantraditionaldesigns">Does a glass air fryer work better than traditional designs?</h3>
+<p>A <strong>glass pot</strong> offers safer cooking by avoiding toxins found in some non-stick coatings.</p>
+<h3 id="whatfeaturesshouldiprioritise">What features should I prioritise?</h3>
+<p>Prioritise capacity, cleaning ease, and cooking versatility based on your needs.</p>
+<h3 id="arethereairfryerswithglasswindowsformonitoring">Are there air fryers with glass windows for monitoring?</h3>
+<p>Yes, the <strong>Glass Air Fryer</strong> provides visibility for perfect cooking control.</p>
+<h3 id="whatstheadvantageofceramiccoatedairfryers">What's the advantage of ceramic-coated air fryers?</h3>
+<p>Ceramic coatings are <strong>non-stick and free from harmful chemicals</strong>.</p>
+<h3 id="canairfryersbeusedforbakingandgrilling">Can air fryers be used for baking and grilling?</h3>
+<p>Most versatile models offer multiple functions, including baking and grilling.</p>
+<h3 id="dolargerairfryerscostmoretorun">Do larger air fryers cost more to run?</h3>
+<p>While larger models can consume more energy, they are often <strong>more economical</strong> due to faster cooking times.</p>
 <h2 id="conclusion">Conclusion</h2>
-<p>With so many fantastic air fryers available in Australia, it's easy to find one that matches your cooking needs and lifestyle. Check the latest prices on Amazon through the links above and select your perfect match before stock runs out!</p>
+<p>When upgrading to an air fryer, consider both the appliance's capacity and your household's cooking needs. With a variety of models to choose from, including toxin-free and dual-zone options, you're sure to find the perfect fit. Check the latest prices and secure your top-rated air fryer before stocks run out!</p>
         </main>
-
-        <footer class="bg-gradient-to-b from-slate-900 to-slate-950 px-6 sm:px-14 py-10 text-center mt-auto border-t border-indigo-900/60">
-            
-            <div class="bg-slate-800/60 text-slate-400 text-sm p-5 rounded-xl mb-8 leading-relaxed border border-slate-700/60 border-l-4 border-l-indigo-500">
-                <strong class="text-white block mb-1">Affiliate Disclosure:</strong> 
+        
+        <footer class="px-6 sm:px-8 py-10 text-center mt-16 border-t border-slate-800">
+            <div class="bg-slate-900/50 border border-slate-800 text-slate-400 text-xs p-5 rounded-xl mb-8 leading-relaxed text-left">
+                <strong class="text-slate-300 block mb-1">Affiliate Disclosure:</strong> 
                 Clipnation Studio is a participant in the Amazon Services LLC Associates Program. As an Amazon Associate, we earn from qualifying purchases. This means we may receive a small commission if you choose to purchase through our links, at no additional cost to you.
             </div>
-            
+
             <div class="flex justify-center gap-6 my-8">
-                <a href="https://www.facebook.com/clipnationstudio" target="_blank" aria-label="Facebook" class="text-slate-500 hover:text-white transition-colors duration-200">
+                <a href="https://www.facebook.com/clipnationstudio" target="_blank" aria-label="Facebook" class="text-slate-500 hover:text-slate-300 transition-colors duration-200">
                     <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                 </a>
-                <a href="https://www.instagram.com/clipnationstudio/" target="_blank" aria-label="Instagram" class="text-slate-500 hover:text-white transition-colors duration-200">
+                <a href="https://www.instagram.com/clipnationstudio/" target="_blank" aria-label="Instagram" class="text-slate-500 hover:text-slate-300 transition-colors duration-200">
                     <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
                 </a>
-                <a href="https://www.pinterest.com.au/ost1090/" target="_blank" aria-label="Pinterest" class="text-slate-500 hover:text-white transition-colors duration-200">
+                <a href="https://www.pinterest.com.au/ost1090/" target="_blank" aria-label="Pinterest" class="text-slate-500 hover:text-slate-300 transition-colors duration-200">
                     <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.367 18.592 0 12.017 0z"/></svg>
                 </a>
-                <a href="http://www.tiktok.com/@clipnationstudio" target="_blank" aria-label="TikTok" class="text-slate-500 hover:text-white transition-colors duration-200">
+                <a href="http://www.tiktok.com/@clipnationstudio" target="_blank" aria-label="TikTok" class="text-slate-500 hover:text-slate-300 transition-colors duration-200">
                     <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1.04-.1z"/></svg>
                 </a>
-                <a href="http://www.youtube.com/@ClipNationStudio" target="_blank" aria-label="YouTube" class="text-slate-500 hover:text-white transition-colors duration-200">
+                <a href="http://www.youtube.com/@ClipNationStudio" target="_blank" aria-label="YouTube" class="text-slate-500 hover:text-slate-300 transition-colors duration-200">
                     <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
                 </a>
             </div>
 
-            <div class="text-slate-400 text-sm space-y-2">
-                <p>Contact: <a href="mailto:clipnationstudio@gmail.com" class="text-slate-300 hover:text-white transition-colors">clipnationstudio@gmail.com</a></p>
+            <div class="text-slate-500 text-sm space-y-2">
+                <p>Contact: <a href="mailto:clipnationstudio@gmail.com" class="text-slate-400 hover:text-slate-200 transition-colors">clipnationstudio@gmail.com</a></p>
                 <p>&copy; 2026 Clipnation Studio. All rights reserved.</p>
             </div>
             
@@ -378,49 +362,23 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            // 1. Upgrade Emojis to Premium SVGs
-            const listItems = document.querySelectorAll('.prose li');
-            const premiumSvgTick = `<div class="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-600 mr-4 mt-1 shadow-sm"><svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg></div>`;
-            
-            listItems.forEach(li => {
-                if(li.innerHTML.includes('✅')) {
-                    li.innerHTML = li.innerHTML.replace(/✅/g, '');
-                    li.classList.add('flex', 'items-start', 'list-none');
-                    li.insertAdjacentHTML('afterbegin', premiumSvgTick);
-                }
-            });
-
-            // 2. Force Center Images (Fixes the n8n paragraph wrapper issue)
-            const images = document.querySelectorAll('.prose img');
-            images.forEach(img => {
-                if (img.parentElement.tagName === 'P') {
-                    // Force the parent paragraph to act as a flex container to center the image
-                    img.parentElement.classList.add('flex', 'justify-center', 'w-full');
-                }
-            });
-            
-            // 3. Create 3D Product Cards (Improvement 5)
-            // This loops through all H2 elements, creates a card wrapper, and moves the product data inside!
+            // Group H2s into Glassmorphism Cards
             const headings = Array.from(document.querySelectorAll('.prose h2'));
             headings.forEach(h2 => {
-                // Ignore the "Why Trust This Data" heading, we only want to wrap products
-                if(h2.innerText.toLowerCase().includes('trust')) return;
+                if(h2.innerText.toLowerCase().includes('trust')) return; // Ignore methodology section
                 
                 const card = document.createElement('div');
                 card.className = 'product-review-card';
                 h2.parentNode.insertBefore(card, h2);
                 
-                // Move the H2 and all sibling elements until the NEXT H2 into the new card
                 let sibling = h2;
                 while (sibling) {
                     let next = sibling.nextElementSibling;
                     card.appendChild(sibling);
-                    // Stop grouping if we hit the next H2 or the end of the prose
                     if (!next || next.tagName === 'H2') break;
                     sibling = next;
                 }
             });
-            
         });
     </script>
 </body>
